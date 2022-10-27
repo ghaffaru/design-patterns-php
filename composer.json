@@ -1,0 +1,22 @@
+{
+    "name": "ghaffarumudashiru/design-patterns",
+    "autoload": {
+        "psr-4": {
+            "Ghaffarumudashiru\\DesignPatterns\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ghaffarumudashiru\\DesignPatterns\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ghaffaru Mudashiru",
+            "email": "mudashiruagm@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
