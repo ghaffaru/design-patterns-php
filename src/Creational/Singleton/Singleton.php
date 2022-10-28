@@ -3,17 +3,19 @@
 namespace Ghaffarumudashiru\DesignPatterns\Creational\Singleton;
 use Exception;
 
-final class Singleton
+class Singleton
 {
-    private static ?Singleton $instance = null;
+    private static $instances = null;
 
     public static function getInstance(): ?Singleton
     {
-        if (self::$instance === null) {
-            self::$instance = new self();
+        $subClass = static::class;
+
+        if (!isset(self::$instances[$subClass])) {
+            self::$instances[$subClass] = new static();
         }
 
-        return self::$instance;
+        return self::$instances[$subClass];
     }
 
     /**
