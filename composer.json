@@ -16,7 +16,11 @@
             "email": "mudashiruagm@gmail.com"
         }
     ],
-    "require": {
+    "require-dev": {
         "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     }
 }
